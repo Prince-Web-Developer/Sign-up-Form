@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
+
 <body>
-    
+    <main>
+        <div class="img-logo-con">
+            <div class="logo">
+                <span><img height="70" src="images/odin-lined.png" alt="odin lined logo"></span>
+                <p>ODIN</p>
+            </div>
+            <div class="credit">
+                Photo by <a href="https://unsplash.com/@mostly_brave">Jonathan Klok</a> on <a
+                    href="https://unsplash.com/photos/shallow-focus-of-pine-trees-NeRzxya_zyI">unsplash</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.</p>
+                <p>Sign up <span class="em">now</span> to get started.</p>
+
+                <p>You <span class="em">Know</span> you want to.</p>
+            </div>
+
+            <div class="con">
+                <div class="form-con">
+
+                    <form action="#" method="post">
+                        <div class="whiteback">
+                            <h1>Let's do this!</h1>
+                            <div class="form-groups">
+                                <div class="form-group">
+                                    <label for="firstN">First Name</label>
+                                    <input type="text" name="firstName" id="firstN" placeholder="Bob">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="lastN">Last Name</label>
+                                    <input type="text" id="lastN" name="lastName" placeholder="Smith">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="eg abc@gmail.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phoneNo">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Cpassword">Confirm Password</label>
+                                    <input type="password" id="Cpassword" name="Cpassword">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btns">
+                            <button>Create Account</button>
+                            <div class="signUp">
+                                <p>Already have an account? <a href="">Log in</a></p>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

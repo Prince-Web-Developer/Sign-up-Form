@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('fonts/subset-Norse-Bold.woff2') format('woff2'),
+    url('fonts/subset-Norse-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background: #eee;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+main {
+  display: flex;
+  width: 100vw;
+}
+
+.img-logo-con {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 100vh;
+  background: url("images/jonathan-klok-NeRzxya_zyI-unsplash.jpg");
+  background-size: cover;
+  background-position: right;
+}
+
+.logo {
+  width: 100%;
+  padding: 5px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.logo p {
+  font-family: 'Norse', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.credit {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.credit,
+.credit a {
+  font-size: clamp(0.8rem, 0.8rem + 0.2vw, 1.2rem);
+  color: white;
+}
+
+
+.main {
+  flex: 1;
+  /* done so that it takes remaining width */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5% 0px;
+
+}
+
+.main-text {
+  height: fit-content;
+}
+
+.main-text {
+  padding: 0px 10px 0px 20px;
+  max-width: 60ch;
+  font-size: clamp(1rem, 0.8rem + 0.4vw, 2.5rem);
+  font-weight: 600;
+}
+
+.main-text p:last-of-type {
+  margin-top: 30px;
+}
+
+.em {
+  font-style: italic;
+}
+
+
+
+.whiteback {
+  background: #fff;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.form-con h1 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.form-con form {
+  margin-top: 20px;
+}
+
+.form-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+}
+
+.form-group input {
+  max-width: 20ch;
+}
+
+
+.img-logo-con-colum-styles {
+  width: 100%;
+  gap: 30px;
+  height: fit-content;
+}
+
+.btns{
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.btns > button{
+  all: unset;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: white;
+  background-color: #596D48;
+}
+
+.btns > button:hover{
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.btns a{
+  color: #596D48;
+}
