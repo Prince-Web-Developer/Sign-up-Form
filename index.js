@@ -32,7 +32,9 @@ form.addEventListener("submit", (e) => {
     }else {
         addClass("opion")
         changeFormMeassage("")
-    }    
+    }  
+    
+    window.location.replace("https://www.youtube.com/watch?v=xvFZjo5PgG0");
 })
 
 
