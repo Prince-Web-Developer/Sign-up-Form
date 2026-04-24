@@ -221,3 +221,7 @@ main {
 .btns a{
   color: #596D48;
 }
+
+label{
+  text-wrap-mode: nowrap;
+}
