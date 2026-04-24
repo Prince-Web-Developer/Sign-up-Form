@@ -181,13 +181,11 @@ main {
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
   width: calc(50% - 30px);
 }
 
 .form-group input {
-  max-width: 20ch;
+  max-width: min(90%,20ch);
 }
 
 
@@ -224,4 +222,26 @@ main {
 
 label{
   text-wrap-mode: nowrap;
+  display: block;
+}
+
+input{
+  display: inline-block;
+}
+
+.opion{
+  position: relative;
+}
+
+.opion::after{
+  position: absolute;
+  left: 10px;
+}
+
+input:user-invalid + .opion::after{
+  content: "❌";
+}
+
+input:user-valid + .opion::after{
+  content: "✔️";
 }

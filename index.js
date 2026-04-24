@@ -12,3 +12,10 @@ if (textContainer.offsetHeight > viewPortHeight || viewPortWidth < 950){
     const imgContainer = document.querySelector(".img-logo-con")
     imgContainer.classList.add("img-logo-con-colum-styles")
 }
+
+
+const form = document.querySelector("form")
+
+form.addEventListener("submit",(e) => {
+    e.preventDefault()
+})
