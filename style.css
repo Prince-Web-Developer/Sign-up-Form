@@ -238,10 +238,16 @@ input{
   left: 10px;
 }
 
-input:user-invalid + .opion::after{
+input:user-invalid + .opion::after,.invalid::after{
   content: "❌";
 }
 
 input:user-valid + .opion::after{
   content: "✔️";
+}
+
+
+.message{
+  color: red;
+  text-align: center;
 }
